@@ -37,3 +37,34 @@ username == password
 username.strip()
 password.strip()
 #bonus neither the username or password can start or end with whitespace
+
+#Bonus
+#17 exercises
+fruits = ['mango', 'kiwi', 'strawberry', 'guava', 'pineapple', 'mandarin orange']
+
+numbers = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 17, 19, 23, 256, -8, -4, -2, 5, -9]
+
+# Example for loop solution to add 1 to each number in the list
+numbers_plus_one = []
+for number in numbers:
+    numbers_plus_one.append(number + 1)
+
+# Example of using a list comprehension to create a list of the numbers plus one.
+numbers_plus_one = [number + 1 for number in numbers]
+
+# Example code that creates a list of all of the list of strings in fruits and uppercases every string
+output = []
+for fruit in fruits:
+    output.append(fruit.upper())
+
+# Exercise 1 - rewrite the above example code using list comprehension syntax. Make a variable named uppercased_fruits to hold the output of the list comprehension. Output should be ['MANGO', 'KIWI', etc...]
+output = []
+for x in fruits:
+    output.append(x.upper())
+print(output)
+
+# Exercise 2
+output = []
+for x in fruits:
+    output.append(x.title())
+print(output)
