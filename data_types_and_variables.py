@@ -7,9 +7,9 @@ print(y) #total sum
 # You rented some movies for your kids
 
 h = [10, 6, 4]
-google = 300 * h[0]
-amazon = 380 * h[1]
-facebook = 350 * h[2]
+google = 400 * h[1]
+amazon = 380 * h[-1]
+facebook = 350 * h[0]
 payment = google + amazon + facebook
 print(payment)
 #You're working as a contractor for 3 companies
@@ -24,19 +24,30 @@ def product_offer(x):
         return False
 assert product_offer(1)
 # product offer application
-
+purchase_more_than_two = True
+product_not_expired = True
+premium_membership = False
+discount_eli = product_not_expired and (purchase_more_than_two or premium_membership)
+discount_eli
+#Review
 username = 'codeup'
 password = 'notastrongpassword'
+password = 'p'
 
 len(password) >= 5
 # the password must be at least 5 characters
 len(username) <= 20
 #the username must be no more than 20 characters
-username == password
-# the username must be no more than 20 characters
+username != password
+# the password must not be the same as the username
 username.strip()
 password.strip()
 #bonus neither the username or password can start or end with whitespace
+no_whitespace_username = not(username.startswith(' ') or username [-1] == '')
+no_whitespace_password = not(password.startswith(' ') or password [-1] == '')
+user_and_pass_valid = no_whitespace_username and no_whitespace_password
+user_and_pass_valid
+#review
 
 #Bonus
 #17 exercises
